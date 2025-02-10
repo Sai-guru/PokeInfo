@@ -24,8 +24,7 @@ const fetchData = async() => {
 
     // for power attacks
     const pokeAbilities = document.getElementById("pokeAbilities");
-    const abilities = data.abilities.map(abil => abil.ability.name);
-    pokeAbilities.textContent = abilities.join(", ");
+    pokeAbilities.textContent =  data.abilities.map(abil => abil.ability.name);
     console.log(data);
   }
   catch (error) {
