@@ -10,8 +10,7 @@ const fetchData = async() => {
     const data = await response.json();
     // For image
     const imgElement = document.getElementById("pokeImg");
-    const pokiImg = data.sprites.front_shiny;
-    imgElement.src = pokiImg;
+    imgElement.src =  data.sprites.front_shiny;;
     imgElement.style.display = "block";
      
     //we wanna knwo that in this API (official) they give those in below respective units to measure
